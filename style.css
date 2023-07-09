@@ -16,7 +16,7 @@ body{
 /* main content section */
 
 .main-content-section {
-    padding: 60px 90px;
+    padding: 100px 90px;
 }
 
 .main-content-title {
@@ -31,7 +31,7 @@ body{
 /* about me section */
 
 .abot-me-section {
-    margin: 0 0 20px 0;
+    margin: 0 0 40px 0;
 }
 
 .about-me-profession{
@@ -49,14 +49,7 @@ body{
     font-size: 45px;
     line-height: 55px;
     color: #000;
-    margin: 0 0 10px 0;
-}
-
-.age{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: #A8A8A8;
+    margin: 0 0 25px 0;
 }
 
 .about-me-description {
@@ -68,14 +61,54 @@ body{
     color: #595959;
 }
 
-    /* my work experience section */
+/* my projects section */
 
- .my-work-experience-section {
-        margin-bottom: 45px;
+.my-projects-section {
+    margin: 0 0 50px 0;
+}
+
+.my-projects-list {
+    padding: 0 0 0 18px;
+}
+
+.my-projects-item {
+    color: #000;
+    font-weight: bold;
+}
+
+.my-projects-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    margin-left: 5px;
+}
+
+.my-projects-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
  }
 
+.my-projects-bracket {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+    }
+
+    /* my work experience section */
+
+    .my-work-experience-section {
+        margin-bottom: 45px;
+    }
+
 .my-work-experience-company {
-    color: #1bc081;
+    color: #FB6D3A;
 }
 
 .my-work-experience-position {
@@ -128,7 +161,7 @@ body{
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
-    color: #1bc081;
+    color: #FB6D3A;
 }
 
 .my-education-faculty{
@@ -160,7 +193,7 @@ body{
     line-height: 27px;
     color: #fff;
     margin-bottom: 10px;
-}
+}   
 
 /* contacts section */
 
@@ -174,7 +207,7 @@ body{
 }
 
 .contacts-section-link {
-    color: #b0b6be;
+    color: #565e6a;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -190,7 +223,7 @@ body{
 
 .tech-skills-item,
 .soft-skills-item {
-    color: #1bc081;
+    color: #FB6D3A;
 }
 
 .tech-skills-item-text,
@@ -206,14 +239,6 @@ body{
     border-radius: 40px;
 }
 
-
-.work-company{
-    font-size: 14px;
-    color: #332f2f;
-    font-style: normal;
-    font-weight: normal;
-}
-
 .logotype{
     display: flex;
     align-items: center;
@@ -223,8 +248,10 @@ body{
 .reference{
     text-decoration: none;
     color:#f5f7fa;
+    margin: 0 40px 0 0;
 }
 
 .reference:hover{
     text-decoration: underline;
 }
+

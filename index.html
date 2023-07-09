@@ -3,140 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY RESUME</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="./style.css">
-    <title>MY RESUME</title>
 </head>
 <body>
+    <!-- Main container-->
     <div class="main-container">
-         <div class="main-content-section">
-            <div class="abot-me-section">
-                <h1 class="about-me-name">Вадим Серапіонов</h1>
-                <p class="age">Вік: 26 років </p>
+        <!-- Main content section-->
+         <main class="main-content-section">
+            <!-- About me section -->
+            <header class="abot-me-section">
+                <h2 class="about-me-profession">Front-End Developer</h2>
+                <h1 class="about-me-name">Vadym Serapionov</h1>
+                <p class="about-me-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>    
+            </header>
+            <!-- My projects container -->
+            <div class="my-projects-section">
+                <h3 class="main-content-title">Projects</h3>
+                <ol class="my-projects-list">
+                    <li class="my-projects-item">
+                            <span class="my-projects-text"> 
+                               <a href="https://hellenglish.goit.global/" class="my-projects-link">https://hellenglish.goit.global/</a>
+                               ..........
+                               <span class="my-projects-bracket">[</span> HTML5, CSS3 <span class="my-projects-bracket">]</span>
+                            </span>           
+                    </li>
+                    <li class="my-projects-item">
+                            <span class="my-projects-text" > 
+                              <a href="https://cryptohub.goit.global/ "class="my-projects-link">https://cryptohub.goit.global/ </a>
+                              ...........
+                              <span class="my-projects-bracket">[</span> JavaScript <span class="my-projects-bracket">]</span>
+                            </span>
+                    </li>
+                    <li class="my-projects-item">
+                        <span class="my-projects-text">  
+                            <a href="https://kidslike.goit.global/"class="my-projects-link">https://kidslike.goit.global/</a>
+                            ..................
+                            <span class="my-projects-bracket">[</span> React.js, Node.js <span class="my-projects-bracket">]</span>
+                        </span>
+                    </li>
+                </ol>   
             </div>
+            <div>
+            <h3>
+                Code example
+            </h3>
+            <pre>
+                <code>
+                if (document.getElementsByClassName) {
+                    x = document.getElementsByClassName("pagination")
+                    if ( x.length>y) {
+                      x.style.visibility = "hidden";
+                  }
+                </code>
+                </pre>  
+            </div>
+            <!-- My work experience section -->
             <div class="my-work-experience-section">
-                <h3 class="main-content-title">Досвід роботи</h3>
+                <h3 class="main-content-title">Work experience</h3>
+                <!-- Company 3 -->
                  <div class="my-work-experience-company-block">
-                    <h4 class="my-work-experience-position">Касир торговельного залу <br><span class="my-work-experience-company"> Компанія: "HEINEMANN DUTY FREE"</span></h4>
-                    <p class="my-work-experience-period">з 11.2017 по 05.2018 (6 місяців) </p>
+                    <h4 class="my-work-experience-position">Shop assistant <span class="my-work-experience-company">HEINEMANN DUTY FREE</span></h4>
+                    <p class="my-work-experience-period">November 2017 - March 2018   <span class="my-work-experience-divider">|</span>   Country</p>
                     <ul class="my-work-experience-duties">
-                         <li class="my-work-experience-duty">Робота з готівкою.
-                        </li>
-                        <li class="my-work-experience-duty">
-                            Консультування клієнтів щодо видів елітного алкоголю, парфумів, продуктів харчування та заохочування їх до купівлі.</li>
-                        <li class="my-work-experience-duty">
-                          Підвищення рівня знання англійської мови.
-                        Зайняття першого місця серед інших змін, як групових так і одного нашого магазину, що впливало на кінцеву заробітну плату.</li>
+                         <li class="my-work-experience-duty">Advising clients on expensive types of alcohol.</li>
+                         <li class="my-work-experience-duty"> Product accounting.</li>
+                         <li class="my-work-experience-duty">Working at the cash register.</li>
+                         <li class="my-work-experience-duty">Sales.</li>
                     </ul>
-                 </div>
+                 </div>      
+                    <!-- Company 2 -->
                  <div>
-                    <h4 class="my-work-experience-position">Помічник бухгалтера <br><span class="my-work-experience-company"> ТОВ "Класик - М" </span> </h4>
-                    <p class="my-work-experience-period">з 08.2018 по 11.2019 (1 рік 3 місяці)</p>
+                    <h4 class="my-work-experience-position">Manager <span class="my-work-experience-company">Roga & Kopyta New</span></h4>
+                    <p class="my-work-experience-period">March 2015 - October 2018   <span class="my-work-experience-divider">|</span>   Country</p>
                     <ul class="my-work-experience-duties">
-                        <li class="my-work-experience-duty">
-                            Написання пояснень та скарг щодо зупинення реєстрації податкових накладних у “M.E.Doc” та відправлення їх на огляд до Державної фіскальної служби.
-                        </li>
-                        <li class="my-work-experience-duty">
-                            Робота з первинною документацією.
-                        </li>
-                        <li class="my-work-experience-duty">
-                            Виплата заробітної плати.
-                        </li>
-                        <li class="my-work-experience-duty">
-                            Складання податкових накладних.
-                        </li>
+                        <li class="my-work-experience-duty">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. </li>
+                        <li class="my-work-experience-duty"> Quis ipsum suspendisse ultrices gravida.</li>
+                        <li class="my-work-experience-duty">Risus commodo viverra maecenas. </li>
                     </ul>
                  </div>
-                 <div>
-                    <h4 class="my-work-experience-position">Помічник бухгалтера <br><span class="my-work-experience-company"> ТОВ "РОНА М" </span> </h4>
-                    <p class="my-work-experience-period"> з 09.2021 по 12.2021 (3 місяці)  </p>
-                    <ul class="my-work-experience-duties">
-                        <li class="my-work-experience-duty">
-                            Написання пояснень та скарг щодо зупинення реєстрації податкових накладних у “M.E.Doc” та відправлення їх на огляд до Державної фіскальної служби.
-                        </li>
-                        <li class="my-work-experience-duty">
-                            Робота з первинною документацією.
-                        </li>
-                        <li class="my-work-experience-duty">
-                            Виплата заробітної плати.
-                        </li>
-                        <li class="my-work-experience-duty">
-                            Складання податкових накладних.
-                        </li>
-                        <li class="my-work-experience-duty">
-                            Складання аналітичних таблиць із баз даних "1С" та “M.E.Doc”.
-                        </li>
-                    </ul>
-                 </div>
+                   <!-- Company 1 -->   
                    <div>
-                       <h4 class="my-work-experience-position"> Спеціаліст відділу контролю якості <br> <span class="my-work-experience-company">  Компанія: "PIN-UP" </span> </h4>
-                       <p class="my-work-experience-period"> з  12.2021 по 12.2022 (1 рік)</p>
-
-                       <ul class="my-work-experience-duties">
-                         <li class="my-work-experience-duty">Контроль якості виконання регламентів. </li>
-                         <li class="my-work-experience-duty">Проведення роботи над помилками з операторами. </li>
-                         <li class="my-work-experience-duty">Надання зворотного зв’язку співробітникам та керівництву.</li>
-                       </ul>
-                   </div>
-                    <h4 class="my-work-experience-position"> IT-досвід </h4>
-                    <p class="my-work-experience-period"> з 01.08.2022 по теперішній час </p>
+                    <h4 class="my-work-experience-position"> Quality control department specialist <br> <span class="my-work-experience-company">  Company: "PIN-UP" </span> </h4>
+                    <p class="my-work-experience-period"> from  12.2021 to 12.2022 (1 рік)</p>
                     <ul class="my-work-experience-duties">
-                        <li class="my-work-experience-duty">Проходження курсів по JavaScript на Udemy.</li>
-                        <li class="my-work-experience-duty">Написання односторінкових сайтів на HTML/CSS.</li>
-                        <li class="my-work-experience-duty">Проходження міні-курсів за напрямком Frontend Developer.</li>
+                      <li class="my-work-experience-duty">Quality control of the implementation of regulations. </li>
+                      <li class="my-work-experience-duty">Conducting work on errors with operators. </li>
+                      <li class="my-work-experience-duty">Providing feedback to employees and management.</li>
                     </ul>
+                </div>
             </div>
+            <!-- My Education section -->
             <div class="my-education-section">
-                <h3 class="my-education-header">Освіта</h3>
-                <h3 class="my-education-university">Національний університет біоресурсів і природокористування України</h3>
-                <h4 class="my-education-faculty">Економічний, облік і оподаткування</h4>
-                <p class="my-work-experience-period">з 2013 по 2018 (5 років 4 місяці)   <span class="my-work-experience-divider"></span>   </p>
+                <h3 class="my-education-header">Education</h3>
+                <h3 class="my-education-university">National University of Life and Environmental Sciences</h3>
+                <h4 class="my-education-faculty">Economy</h4>
+                <p class="my-work-experience-period">September 2013 - June 2017   <span class="my-work-experience-divider">|</span>   Country</p>
             </div>
-         </div>
-         <aside class="sidebar-section">
-            <img class="photo" width="300" src="./photo.jpg" alt="my photo">
+         </main>
+         <!-- Sidebar section-->
+        <aside class="sidebar-section">
+            <img class="photo" width="370" src="img/photo.jpg" alt="my_photo">  
+         <!-- Contacts section-->
             <div class="contacts-section">
-            <h3 class="sidebar-title">Контакти</h3>
+            <h3 class="sidebar-title">Contacts</h3>
             <div>
                 <span class="contacts-section-type">C:</span>
-                <a class="contacts-section-link" href="tel:+380684969738">+380684969738</a>
+                <a class="contacts-section-link" href="tel:+77777777777">+3806849697852</a>
             </div>
             <div>
                 <span class="contacts-section-type">E:</span>
-                <a class="contacts-section-link" href="mailto:vadimserapionov@gmail.com">vadimserapionov@gmail.com</a>
+                <a class="contacts-section-link" href="mailto:chornyiav@gmail.com">chornyiav@gmail.com</a>
             </div>
             </div>
+         <!-- Tech skills section-->
             <div class="tech-skills-section">
-            <h3 class="sidebar-title">Tech skills</h3>
+            <h3 class="sidebar-title">Tech Skills</h3>
             <ul class="tech-skills-list">
-               <li class="tech-skills-item"> <span class="tech-skills-item-text">CRM</span> </li>
-               <li class="tech-skills-item"> <span class="tech-skills-item-text">Google Docs</span> </li>
-               <li class="tech-skills-item"> <span class="tech-skills-item-text">Jira</span> </li>
-               <li class="tech-skills-item"><span class="tech-skills-item-text">Confluence</span></li>
-               <li class="tech-skills-item"><span class="tech-skills-item-text">HTML/CSS</span></li>
-               <li class="tech-skills-item"><span class="tech-skills-item-text">JavaScript Basic</span></li>
-               <li class="tech-skills-item"><span class="tech-skills-item-text"> Англійська мова на рівні B1 (Intermediate, наявність сертифікату КЕТ (A2))</span></li>
-               <li class="tech-skills-item"><span class="tech-skills-item-text"> Git/GitHub</span></li>
+               <li class="tech-skills-item"> <span class="tech-skills-item-text">HTML5</span> </li>
+               <li class="tech-skills-item"> <span class="tech-skills-item-text">CSS3</span> </li>
+               <li class="tech-skills-item"> <span class="tech-skills-item-text">GIT</span> </li>
+               <li class="tech-skills-item"><span class="tech-skills-item-text">WebPack</span></li>
+               <li class="tech-skills-item"><span class="tech-skills-item-text">JavaScript</span></li>
+               <li class="tech-skills-item"><span class="tech-skills-item-text">React.js</span></li>
+               <li class="tech-skills-item"><span class="tech-skills-item-text">Node.js</span></li>
+               <li class="tech-skills-item"><span class="tech-skills-item-text">English language at B1 level (Intermediate, availability of KET certificate (A2))
+            </span></li>
             </ul>
             </div>
+         <!-- Soft skills section-->
           <div class="soft-skills-section">
             <h3 class="sidebar-title">Soft skills</h3>
             <ul class="soft-skills-list">
-                <li class="soft-skills-item"> <span class="soft-skills-item-text">Вміння працювати в команді</span></li>
-                <li class="soft-skills-item">  <span class="soft-skills-item-text">Відповідальність</span></li>
-                <li class="soft-skills-item"> <span class="soft-skills-item-text">Креативність</span></li>
-                <li class="soft-skills-item"> <span class="soft-skills-item-text">Гнучкість/адаптивність</span></li>
-                <li class="soft-skills-item"> <span class="soft-skills-item-text">Цілеспрямованість</span></li>
-                <li class="soft-skills-item"> <span class="soft-skills-item-text">Критичне мислення</span></li>
+                <li class="soft-skills-item"> <span class="soft-skills-item-text">Scrum</span></li>
+                <li class="soft-skills-item">  <span class="soft-skills-item-text">Agile</span></li>
+                <li class="soft-skills-item"> <span class="soft-skills-item-text">GTD</span></li>
+                <li class="soft-skills-item"> <span class="soft-skills-item-text">Teamwork</span></li>   
             </ul>
           </div>
+          <footer>
             <div class="logotype">
-                <a class="reference" href="https://github.com/WaLLie12" target="_blank">Посилання на мій GitHub</a>
-                <img src="./rs_school_js.svg" width="50%"  alt="rs_logo">
+                <a class="reference" href="https://github.com/WaLLie12" target="_blank">Reference on my GitHub</a>
+                <a class="ss" href="https://rs.school/"><img src="./rs_school_js.svg" width="50%"  alt="rs_logo"></a>
             </div>
+         </footer>
         </aside>
     </div>
 </body>
-</html>
+</html> 
