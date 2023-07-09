@@ -213,3 +213,18 @@ body{
     font-style: normal;
     font-weight: normal;
 }
+
+.logotype{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.reference{
+    text-decoration: none;
+    color:#f5f7fa;
+}
+
+.reference:hover{
+    text-decoration: underline;
+}
