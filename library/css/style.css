@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap');
+:root{
+    --first-color: #0C0C0E;
+    --second-color: #000;
+    --third-color: #BB945F;
+    --fourth-color: #fff;
+    --fifth-color: #8E8E8E;
+
+/*========== Font  ==========*/
+    --body-font: "Inter", sans-serif;
+    --second-font: 'Forum';
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+/*REUSABLE CSS CLASSES*/
+
+.container{
+    max-width: 1440px;
+    padding: 0 1.25rem;
+    margin: 0px auto;
+}
+
+.section__title{
+    font-size: 3.5rem;
+    margin-bottom: 3.8rem;
+    text-align: center;
+}
+
+.section{
+    padding-block: 1.25rem 2.5rem;
+}
+
+/*GENERAL CLASSES*/
+
+body{
+    font-family: var(--body-font);
+}
+
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--first-color);
+    transition: background .4s;
+}
+
+div>h1{
+    font-family: var(--second-font);
+    color: var(--fourth-color);
+    font-size: 1.875rem;
+    line-height: 3.125rem;
+    letter-spacing: 0,0375rem;
+    font-weight: 400;
+}
+
+.header__position{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.header__nav_position{
+    display: flex;
+    align-items:center;
+    margin-right: 0;
+}
+
+nav>ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__link{
+    color: var(--fourth-color);
+    font-size: 1,25rem;
+    font-weight: 400;
+    line-height: 3.125rem;
+}
+
+.navigation__item:not(:last-child){
+    margin-right: 30px;
+}
+
+.navigation__item:last-child{
+    margin: 0 40px 0 0;
+}
+
+.header__img>img{
+    width: 28px;
+}
