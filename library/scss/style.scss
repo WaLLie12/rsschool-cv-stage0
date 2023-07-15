@@ -43,8 +43,12 @@ a {
     margin: 0px auto;
 }
 
-.section{
-    padding-block: 1.25rem 2.5rem;
+section:not(:first-child){
+    padding: 20px 20px 40px 20px;
+}
+
+section:nth-child(3){
+    padding: 15px 20px 40px 20px;
 }
 
 /*GENERAL CLASSES*/
@@ -120,10 +124,6 @@ nav>ul{
 }
 
 /*WELCOME*/
-
-section:not(:first-child){
-    padding: 0 20px;
-}
 
 .welcome__back{
     height: 600px;
@@ -205,10 +205,104 @@ section:not(:first-child){
     column-gap: 25px;
 }
 
-.about__pagination{
-    width: 20px;
-    height: 20px;
+.round__circles{
+    padding: 30.5px 0 0 0;
+}
+
+.round__circles > ul{
+    display: flex;
+    justify-content: center;
+}
+
+.button__circle__cover{
+    width: 26px;
+    height: 26px;
+    padding: 5px;
+    background-color:var(--fourth-color);
+    cursor:pointer;
+    border: none;
+    outline: none;
+}
+
+.button__circle{
+    display: block;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
-    cursor: pointer;
-    background: rgba(242, 120, 92, 0.5);
+    // cursor: pointer;
+    background: var(--first-color);
+    border: none;
+    outline: none;
+}
+
+.button__circle_active{
+    background: #BB945F; 
+}
+
+.button__circle:hover, 
+.button__circle:active, 
+.button__circle:focus{
+    background: #BB945F; 
+}
+
+/*FAVORITES*/
+
+.favorites__subtitle{
+    color: #000;
+    text-align: start;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.custom__input{
+    display: none;
+}
+
+.text__input{
+    position: relative;
+    padding: 0 90px 0 40px;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text__input::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 2px solid var(--second-color);
+    top: 0;
+    left: 0;
+}
+
+.text__input::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: var(--second-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: .2s;
+    top: 5px;
+    left: 5px;
+    font-weight: 700;
+}
+
+.custom__input:checked + .text__input::after{
+    opacity: 1;
+}
+
+.custom__input:checked + .text__input {
+    font-weight: 700;
+}
+
+.label{
+    padding: 5px;
 }
