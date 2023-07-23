@@ -663,3 +663,34 @@ label{
     font-weight: 400;
     letter-spacing: 0.02em;
 }
+
+.card__getting__buttons{
+    display: inline-flex;
+    column-gap: 20px;
+}
+
+.card__getting__button__2{
+    color: var(--first-color);
+    text-align: center;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 9px 20px;
+    background-color: var(--fourth-color);
+    border-radius: 2px;
+    border: 1px solid var(--first-color);
+    cursor: pointer;
+}
+
+.card__getting__button__1{
+     color: var(--first-color);
+    text-align: center;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 9px 15.5px;
+    background-color: var(--fourth-color);
+    border-radius: 2px;
+    border: 1px solid var(--first-color);
+    cursor: pointer;
+}
