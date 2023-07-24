@@ -694,3 +694,78 @@ label{
     border: 1px solid var(--first-color);
     cursor: pointer;
 }
+
+.footer{
+    background-color: var(--first-color) ;
+    padding: 20px 20px 44px 20px;
+}
+
+.footer p{
+    color: var(--fourth-color) ;
+}
+
+.footer__general__info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.general__info__place{
+    font-size: 0.9375rem;
+    line-height: 20px;
+}
+
+.footer__general__info_destination{
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+
+.social__network__list{
+    display: flex;
+    column-gap: 15px;
+}
+
+.work__time{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.work__time p{
+    text-align: right;
+    font-size: 0.9375rem;
+    line-height: 20px;
+}
+
+.footer__border{
+    border: 1px solid var(--fourth-color);
+    margin-bottom: 44px;
+}
+
+.footer__basement{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__basement__year{
+    font-size: 1.25rem;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.footer__basement__school{
+    font-size: 1.25rem;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.footer__basement__user{
+    font-size: 1.25rem;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.footer__basement__user>a{
+    color: var(--fourth-color) ;
+}
