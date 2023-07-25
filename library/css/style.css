@@ -476,6 +476,7 @@ label {
   display: none;
 }
 
+/*COFFEE SHOP*/
 .shop__text {
   text-align: center;
   font-size: 1.25rem;
@@ -507,9 +508,6 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 480px;
-     -moz-column-gap: 480px;
-          column-gap: 480px;
 }
 
 .shop__menu-right {
@@ -520,9 +518,6 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
   row-gap: 40px;
 }
 
@@ -532,9 +527,21 @@ label {
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 2.5rem; /* 100% */
+  line-height: 2.5rem;
   letter-spacing: 0.125rem;
   text-transform: capitalize;
+}
+
+.menu__title-right {
+  color: var(--third-color);
+  font-family: var(--second-font);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: capitalize;
+  text-align: end;
 }
 
 .menu__list {
@@ -548,9 +555,22 @@ label {
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+}
+
+.menu__list__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .menu__item {
@@ -572,6 +592,7 @@ label {
   line-height: 2.5rem;
   letter-spacing: 0.125rem;
   text-transform: capitalize;
+  margin-right: 56px;
 }
 
 .menu__border {
@@ -579,6 +600,7 @@ label {
   width: 100px;
   height: 1px;
   background: #BB945F;
+  margin-left: auto;
 }
 
 .menu__price {
@@ -589,8 +611,10 @@ label {
   line-height: 2.5rem;
   letter-spacing: 0.125rem;
   text-transform: capitalize;
+  margin-left: 61px;
 }
 
+/*CONTACTS*/
 .contacts__information {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,6 +674,7 @@ label {
   color: var(--second-color);
 }
 
+/*LIBRARY CARD*/
 .library__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -847,6 +872,7 @@ label {
   cursor: pointer;
 }
 
+/*FOOTER*/
 .footer {
   background-color: var(--first-color);
   padding: 20px 20px 44px 20px;
