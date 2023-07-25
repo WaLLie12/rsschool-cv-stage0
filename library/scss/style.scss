@@ -51,6 +51,14 @@ section:nth-child(3){
     padding: 15px 20px 40px 20px;
 }
 
+section:nth-child(5){
+    padding: 20px 20px 36px 20px;
+}
+
+section:nth-child(6){
+    padding: 20px 20px 41px 20px;
+}
+
 /*GENERAL CLASSES*/
 
 body{
@@ -63,7 +71,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+ /*HEADER*/
 .header{
     position: relative;
     top: 0;
@@ -105,10 +113,35 @@ nav>ul{
 
 .navigation__link{
     color: var(--fourth-color);
-    font-size: 20px;
-    font-style: normal;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 50px
+    line-height: 50px;
+    position: relative;
+    transition: all .3s;
+}
+
+.navigation__link:hover{
+    color: #434343;
+    transition: all .3s;
+}
+
+.navigation__link:hover::before{
+    transform: scaleX(1);
+    transition: transform 0.25s;
+    transform-origin: left;
+}
+
+.navigation__link:before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 8%;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.25s;
+    transform-origin: right;
 }
 
 .navigation__item:not(:last-child){
@@ -699,7 +732,7 @@ label{
     text-align: center;
     font-size: 0.625rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.01em;
     padding: 9px 20px;
     background-color: var(--fourth-color);
     border-radius: 2px;
@@ -750,7 +783,7 @@ label{
 
 .social__network__list{
     display: flex;
-    column-gap: 15px;
+    column-gap: 16px;
 }
 
 .work__time{
@@ -767,7 +800,7 @@ label{
 
 .footer__border{
     border: 1px solid var(--fourth-color);
-    margin-bottom: 44px;
+    margin-bottom: 45px;
 }
 
 .footer__basement{
