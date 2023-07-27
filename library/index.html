@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./css/style.css">
     <title>Library</title>
 </head>
@@ -18,11 +19,11 @@
                     <div class="header__nav_position">
                         <nav class="header__nav-navigation">
                             <ul class="navigation__list">
-                                <li class="navigation__item"><a class="navigation__link" href="#">About</a></li>
-                                <li class="navigation__item"><a class="navigation__link" href="#">Favorites</a></li>
-                                <li class="navigation__item"><a class="navigation__link" href="#">Coffee shop</a></li>
-                                <li class="navigation__item"><a class="navigation__link" href="#">Contacts</a></li>
-                                <li class="navigation__item"><a class="navigation__link" href="#">Library Card</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#About">About</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#Favorites">Favorites</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#Coffee__shop">Coffee shop</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#Contacts">Contacts</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#Library__Card">Library Card</a></li>
                             </ul>
                         </nav>
                         <div class="header__img">
@@ -34,15 +35,15 @@
         </header>
         <main class="main">
             <section class="welcome">
-                <div class="welcome__back">
+                
                     <div class="welcome__container">
                         <h3 class="welcome__title">
                             Welcome <br> to the Brooklyn Library
                         </h3>
                     </div>
-                </div>
+                
             </section>
-            <section class="about">
+            <section class="about" id="About">
                 <h2 class="section__title">
                     About
                 </h2>
@@ -66,15 +67,19 @@
                         <img src="./images/museum.png" alt="building">
                     </div>
                 </div>
-                <div class="round__circles">
-                    <ul>
-                        <li class="button__circle__cover"><a class="button__circle" href="##"></a></li>
-                        <li class="button__circle__cover"><a class="button__circle" href="##"></a></li>
-                        <li class="button__circle__cover"><a class="button__circle" href="##"></a></li>
-                    </ul>
+                <div class="slider__circles">
+                    <div class="button__circle__container">
+                      <div class="button__circle button__circle__first" ></div>
+                    </div>
+                    <div class="button__circle__container">
+                      <div class="button__circle" ></div>
+                    </div>
+                    <div class="button__circle__container">
+                      <div class="button__circle" ></div>
+                    </div>
                 </div>
             </section>
-            <section class="favorites">
+            <section class="favorites" id="Favorites">
                 <h2 class="section__title">
                     Favorites
                 </h2>
@@ -186,7 +191,7 @@
                             <p class="description__text">
                                 A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.
                             </p>
-                            <button class="description__button">
+                            <button disabled class="description__button__inactive">
                                 Own
                             </button>
                             
@@ -278,7 +283,7 @@
                             <p class="description__text">
                                 A fascinating story of a teenage girl who marries a man twice her age with the promise to bring her to America. Her marriage is an opportunity for her family to eventually immigrate. For fans of Isabel Allende and Julia Alvarez.
                             </p>
-                            <button class="description__button">
+                            <button disabled class="description__button__inactive">
                                 Own
                             </button>
                             
@@ -463,7 +468,7 @@
                 </div>
             </div>
             </section>
-            <section class="CoffeeShop">
+            <section class="CoffeeShop" id="Coffee__shop">
                 <h2 class="section__title">
                     Coffee shop
                 </h2>
@@ -615,7 +620,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts">
+            <section class="contacts" id="Contacts">
                 <h2 class="section__title">
                     Our Contacts
                 </h2>
@@ -641,7 +646,7 @@
                     </div>
                 </div>
             </section>
-            <section class="library__card ">
+            <section class="library__card" id="Library__Card">
                 <h2 class="section__title">
                     Digital Library Cards
                 </h2>
@@ -656,12 +661,12 @@
                                     Brooklyn Public Library
                                 </p>
                                 <form class="user__info-form">
-                                    <input class="user__info-input" placeholder="Reader's name" type="text">
-                                    <input class="user__info-input" placeholder="Card number" type="text">
+                                    <input class="user__info-input" placeholder="Reader's name" type="text" required pattern="^[a-zA-Z]+$">
+                                    <input class="user__info-input" placeholder="Card number" type="text" required pattern="[A-Z]{1}[0-9]+$">
                                 </form>
                             </div>
-                            <div class="user__info-button">
-                                <button >Check the card</button>
+                            <div class="user__info__click">
+                                <button class="user__info__button">Check the card</button>
                             </div>
                         </div>
                     </div>
@@ -684,8 +689,8 @@
             <div class="footer__general__info">
                 <div class="footer__general__info_destination general__info">
                     <p class="general__info__place">
-                        286 Cadman Plaza, New York,
-                        <br> NY 11238, United States
+                        <a href="https://www.google.com/maps/place/286+Cadman+Plaza+W,+Brooklyn,+NY+11201,+%D0%A1%D0%A8%D0%90/data=!4m2!3m1!1s0x89c25a49b649b8c3:0x6342a2291cea2e?sa=X&ved=2ahUKEwj9iMCrqqqAAxXD_rsIHVQJDYQQ8gF6BAgVEAA&ved=2ahUKEwj9iMCrqqqAAxXD_rsIHVQJDYQQ8gF6BAgWEAI">286 Cadman Plaza, New York,
+                        <br> NY 11238, United States</a>
                     </p>
                     <ul class="general__info_social social__network__list">
                         <li class="social__network__item"><a href="https://twitter.com/"><img src="./images/u_twitter-alt.svg" alt="twitter logo"></a></li>

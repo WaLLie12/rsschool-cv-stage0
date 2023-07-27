@@ -60,6 +60,7 @@ section:nth-child(6) {
 /*GENERAL CLASSES*/
 body {
   font-family: var(--body-font);
+  min-width: 1450px;
 }
 
 .wrapper {
@@ -138,7 +139,7 @@ nav > ul {
 }
 
 .navigation__link:hover {
-  color: #434343;
+  color: var(--third-color);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -185,10 +186,10 @@ nav > ul {
 }
 
 /*WELCOME*/
-.welcome__back {
+.welcome {
   height: 600px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0C0C0E), color-stop(0.01%, #0C0C0E), to(rgba(18, 18, 21, 0.1))), url(../images/Welcome.png);
-  background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 100%), url(../images/Welcome.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0C0C0E), color-stop(0.01%, #0C0C0E), color-stop(50%, rgba(18, 18, 21, 0.1))), url(../images/Welcome.jpg);
+  background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 50%), url(../images/Welcome.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -273,52 +274,71 @@ nav > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-column-gap: 25px;
      -moz-column-gap: 25px;
           column-gap: 25px;
 }
 
-.round__circles {
-  padding: 30.5px 0 0 0;
-}
-
-.round__circles > ul {
+.slider__circles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 31px;
+  padding: 0;
 }
 
-.button__circle__cover {
+.button__circle__container {
+  position: relative;
   width: 26px;
   height: 26px;
-  padding: 5px;
-  background-color: var(--fourth-color);
   cursor: pointer;
-  border: none;
-  outline: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; /* Add a pointer cursor to indicate interactivity */
 }
 
 .button__circle {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; /* Set the background color of the clickable area to transparent */
+}
+
+.button__circle::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: var(--first-color);
-  border: none;
-  outline: none;
+  background-color: var(--first-color);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; /* Set the default color of the circle */
 }
 
-.button__circle_active {
-  background: #BB945F;
+.button__circle.button__circle__first::before {
+  background-color: var(--third-color);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.button__circle:hover,
-.button__circle:active,
-.button__circle:focus {
-  background: #BB945F;
+.button__circle:hover::before {
+  background-color: var(--third-color);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; /* Change the color of the circle inside on hover */
 }
 
 /*FAVORITES*/
@@ -326,10 +346,10 @@ nav > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 87px;
-     -moz-column-gap: 87px;
-          column-gap: 87px;
-  margin: 0 0 35px 0;
+  -webkit-column-gap: 82px;
+     -moz-column-gap: 82px;
+          column-gap: 82px;
+  margin: 0 0 37px -5px;
 }
 
 label {
@@ -340,15 +360,14 @@ label {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  padding: 0 0 0 5px;
 }
 
 .favorites__subtitle {
-  color: #000;
+  color: var(--second-color);
   text-align: start;
   font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .custom__input {
@@ -360,7 +379,7 @@ label {
   position: relative;
   width: 17px;
   height: 17px;
-  margin: 5px 5px 5px -5px;
+  margin: 5px;
   border-radius: 50%;
   border: 2px solid var(--second-color);
 }
@@ -513,8 +532,32 @@ label {
   letter-spacing: 1px;
   padding: 9px 27px;
   background-color: var(--fourth-color);
-  border: 1px solid black;
+  outline: 1px solid black;
   cursor: pointer;
+  border-radius: 2px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.description__button:hover {
+  outline: none;
+  background-color: var(--third-color);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.description__button__inactive {
+  display: inline-block;
+  width: 74px;
+  color: var(--third-color);
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  padding: 9px 27px;
+  background-color: var(--fourth-color);
+  border: 1px solid var(--third-color);
   border-radius: 2px;
 }
 
@@ -526,10 +569,8 @@ label {
 .shop__text {
   text-align: center;
   font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 2.5rem; /* 200% */
-  letter-spacing: 0.125rem;
+  letter-spacing: 2px;
   text-transform: lowercase;
   margin-bottom: 40px;
 }
@@ -537,10 +578,8 @@ label {
 .shop__text-letter {
   text-align: center;
   font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 2.5rem; /* 200% */
-  letter-spacing: 0.125rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -788,7 +827,6 @@ label {
       flex-shrink: 0;
   border-radius: 10px;
   margin-bottom: 25px;
-  padding: 13px 0 4px;
 }
 
 .user__info-input::-webkit-input-placeholder {
@@ -797,7 +835,6 @@ label {
   font-size: 30px;
   line-height: 50px;
   letter-spacing: 0.6px;
-  padding-left: 20px;
 }
 
 .user__info-input::-moz-placeholder {
@@ -806,7 +843,6 @@ label {
   font-size: 30px;
   line-height: 50px;
   letter-spacing: 0.6px;
-  padding-left: 20px;
 }
 
 .user__info-input:-ms-input-placeholder {
@@ -815,7 +851,6 @@ label {
   font-size: 30px;
   line-height: 50px;
   letter-spacing: 0.6px;
-  padding-left: 20px;
 }
 
 .user__info-input::-ms-input-placeholder {
@@ -824,7 +859,6 @@ label {
   font-size: 30px;
   line-height: 50px;
   letter-spacing: 0.6px;
-  padding-left: 20px;
 }
 
 .user__info-input::placeholder {
@@ -833,14 +867,22 @@ label {
   font-size: 30px;
   line-height: 50px;
   letter-spacing: 0.6px;
+}
+
+input[type=text] {
+  color: var(--third-color);
+  font-family: var(--second-font);
+  font-size: 1.875rem;
+  line-height: 50px;
+  letter-spacing: 0.6px;
   padding-left: 20px;
 }
 
-.user__info-button {
+.user__info__click {
   text-align: center;
 }
 
-.user__info-button > button {
+.user__info__button {
   color: var(--first-color);
   text-align: center;
   font-size: 1.25rem;
@@ -848,10 +890,19 @@ label {
   line-height: normal;
   letter-spacing: 0.0625em;
   border-radius: 2px;
-  border: 1px solid var(--first-color);
+  outline: 1px solid var(--first-color);
   background-color: var(--fourth-color);
   padding: 10px 40px 9px 40px;
   cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.user__info__button:hover {
+  outline: none;
+  background-color: var(--third-color);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .card__getting {
@@ -901,8 +952,17 @@ label {
   padding: 9px 20px;
   background-color: var(--fourth-color);
   border-radius: 2px;
-  border: 1px solid var(--first-color);
+  outline: 1px solid var(--first-color);
   cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.card__getting__button__2:hover {
+  outline: none;
+  background-color: var(--third-color);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .card__getting__button__1 {
@@ -914,8 +974,17 @@ label {
   padding: 9px 15.5px;
   background-color: var(--fourth-color);
   border-radius: 2px;
-  border: 1px solid var(--first-color);
+  outline: 1px solid var(--first-color);
   cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.card__getting__button__1:hover {
+  outline: none;
+  background-color: var(--third-color);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 /*FOOTER*/
@@ -941,6 +1010,10 @@ label {
 .general__info__place {
   font-size: 0.9375rem;
   line-height: 20px;
+}
+
+.general__info__place > a {
+  color: var(--fourth-color);
 }
 
 .footer__general__info_destination {
