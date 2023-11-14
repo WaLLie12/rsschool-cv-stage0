@@ -12,3 +12,22 @@
 
  I`m 27 years old. I want to work as a frontend developer. I am on learning JS step. Like spending time with my computer and clever people. Ьy strengths are perseverance in achieving the set goal and solving complex problems.
 
+# **Code example**
+
+```
+function meanScore(...numbers) {
+  if (numbers.some((num) => typeof num !== "number")) {
+    console.log("We need NUMBERS!");
+    return;
+  }
+  const sum = numbers.reduce((acc, number) => acc + number, 0);
+  const length = numbers.length;
+  return (sum / length).toFixed(2);
+}
+```
+
+# **Experience**
+
+* Passed some courses and solved a lot of assingments
+* Codewars (6kyu)
+* Passed stage(0)
