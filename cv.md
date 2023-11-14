@@ -17,5 +17,24 @@
  * AXIOS
  * Jira
  * JS
- * HTML\CSS
+ * HTML\CSS\SCSS
  * Version control: Git (remote service GitHub)
+
+# **Code example**
+
+```
+function meanScore(...numbers) {
+  if (numbers.some((num) => typeof num !== "number")) {
+    console.log("We need NUMBERS!");
+    return;
+  }
+  const sum = numbers.reduce((acc, number) => acc + number, 0);
+  const length = numbers.length;
+  return (sum / length).toFixed(2);
+}
+```
+
+# **Experience**
+
+* completed JS/html/css courses
+* Codewars (6kyu)
