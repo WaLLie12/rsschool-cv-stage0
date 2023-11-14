@@ -31,3 +31,12 @@ function meanScore(...numbers) {
 * Passed some courses and solved a lot of assingments
 * Codewars (6kyu)
 * Passed stage(0)
+
+# **Education**
+
+* National University of Life and Environmental Sciences (Economy)
+* Udemy (JS)
+
+# **English**
+
+* B1 (KET certificate, was living abroad for more than 1 year)
