@@ -38,3 +38,12 @@ function meanScore(...numbers) {
 
 * completed JS/html/css courses
 * Codewars (6kyu)
+
+# **Education**
+
+* National University of Life and Environmental Sciences (Economy)
+* Udemy (JS)
+
+# **English**
+
+* B1 (KET certificate, was living abroad for more than 1 year)
